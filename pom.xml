@@ -6,14 +6,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.0.RELEASE</version>
+		<version>3.5.9</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	
 	<groupId>io.github.hiwepy</groupId>
 	<artifactId>shiro-oauth2-spring-boot-starter</artifactId>
 	<description>Spring Boot Starter For Shiro With OAuth 1.0 / OAuth 2.0</description>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>3.5.x.20260527-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<url>https://github.com/hiwepy/${project.artifactId}</url>
 	<packaging>jar</packaging>
@@ -364,7 +364,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
+		<java.version>17</java.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
 		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
 		<fastjson.version>1.2.75</fastjson.version>
 		<scribejava.version>6.5.1</scribejava.version>
@@ -375,8 +376,8 @@
 		
 		<!-- Java Servlet API -->
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
 			<optional>true</optional>
 		</dependency>
 		
